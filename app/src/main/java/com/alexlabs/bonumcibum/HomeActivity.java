@@ -16,20 +16,28 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * В HomeActivity содержится список рецептов
+ * @author AlexLabs
+ */
+
 public class HomeActivity extends AppCompatActivity {
 
     ListView listView;
 
     // Recipes
 
-    String[] mTitle = {"Lasagna"};
-    String[] mDescription = {" "};
+    String[] mTitle = {"Lasagna", "Tom yum"};
+    String[] mDescription = {" ", " "};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        /**
+         * Метод закрепления режима экрана (Горизонтальный)
+         */
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         listView = findViewById(R.id.recipes);
@@ -44,6 +52,9 @@ public class HomeActivity extends AppCompatActivity {
                 if (position == 0) {
                     startActivity(new Intent(HomeActivity.this, Lasagna.class));
                 }
+                if (position == 1) {
+                    startActivity(new Intent(HomeActivity.this, TomYum.class));
+                }
             }
         });
     }
@@ -53,6 +64,12 @@ public class HomeActivity extends AppCompatActivity {
         String[] rTitle;
         String[] rDescription;
 
+        /**
+         * Конструктор класса MyAdapter
+         * @param c интерфейс доступа к функциям операционной системы Android
+         * @param title первая строка ряда row
+         * @param description вторая строка ряда row
+         */
         MyAdapter(Context c, String[] title, String[] description) {
             super(c, R.layout.row, R.id.tv_Main, title);
             this.context = c;
@@ -60,15 +77,29 @@ public class HomeActivity extends AppCompatActivity {
             this.rDescription = description;
         }
 
+        /**
+         *
+         * @param position позиция ряда в ListView
+         * @return Ряд
+         */
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            /**
+             * Выбор row.xml в качестве ряда
+             * Создание переменных myTitle и myDescription типа TextView, в которых будут хранится первая и вторая строка ряда
+             */
             View row = layoutInflater.inflate(R.layout.row, parent, false);
             TextView myTitle = row.findViewById(R.id.tv_Main);
             TextView myDescription = row.findViewById(R.id.tv_Sub);
             //Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/council.otf");
 
+            /**
+             * Присвоение myTitle значения в соответствии с позицией элемента
+             * Присвоение myDescription значения в соответствии с позицией элемента
+             */
             myTitle.setText(rTitle[position]);
             myDescription.setText(rDescription[position]);
             //myTitle.setTypeface(myFont);

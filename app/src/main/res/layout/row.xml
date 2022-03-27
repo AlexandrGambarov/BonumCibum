@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="Main Title"
-            android:textColor="#FFFFFF"
+            android:textColor="#654321"
             android:textSize="20sp"
             android:textStyle="bold" />
 

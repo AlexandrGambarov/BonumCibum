@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BonumCibum">
-        <activity android:name=".Lasagna"></activity>
+        <activity android:name=".TomYum"></activity>
+        <activity android:name=".Lasagna" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
