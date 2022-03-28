@@ -7,8 +7,14 @@ import android.os.Bundle;
 
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class TomYum extends AppCompatActivity {
+/**
+ * В классе TomYum содержится рецепт супа Том Ям
+ */
 
+public class TomYum extends AppCompatActivity {
+    /**
+     * Переменная типа PDFView для хранения файла рецепта
+     */
     PDFView pdf_TomYum;
 
     @Override
@@ -16,9 +22,19 @@ public class TomYum extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tom_yum);
 
+        /**
+         * Метод закрепления режима экрана (Горизонтальный)
+         */
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
+        /**
+         * Определение id переменной pdf_TomYum
+         */
         pdf_TomYum = findViewById(R.id.pdf_TomYum);
+
+        /**
+         * Загрузка файла на экран
+         */
         pdf_TomYum.fromAsset("Tom_Yam.pdf").load();
     }
 }

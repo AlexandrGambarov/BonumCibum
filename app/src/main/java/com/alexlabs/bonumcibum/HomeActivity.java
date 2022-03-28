@@ -36,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         /**
-         * Метод закрепления режима экрана (Горизонтальный)
+         * Метод закрепления режима экрана (Вертикальный)
          */
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -78,7 +78,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         /**
-         *
+         * Создание ряда в списке рецептов
          * @param position позиция ряда в ListView
          * @return Ряд
          */
