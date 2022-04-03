@@ -17,8 +17,8 @@
 University project by AlexandrGambarov and Louert.
 
 
-## Описание
+## Description
 The app contains recipes of tasty dishes that are easy to prepare.
 
-## Команда запуска
-To start the app, download it from the official Play Market.
+## Starting the app
+To start the app, download it from the official Play Market: https://play.google.com/store/apps/details?id=com.alexlabs.bonumcibum
