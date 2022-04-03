@@ -6,7 +6,7 @@
 Приложение содержит рецепты вкусных блюд, несложных в приготовлении.
 
 ## Команда запуска
-Для запуска скачайте приложение из официального магазина Play Market: https://play.google.com/store/apps/details?id=com.alexlabs.bonumcibum
+Приложение доступно в официальном магазине Play Market: https://play.google.com/store/apps/details?id=com.alexlabs.bonumcibum. Для запуска кода необходимо открыть проект в Android Srudio или Eclipse
 
 
 #
@@ -21,4 +21,4 @@ University project by AlexandrGambarov and Louert.
 The app contains recipes of tasty dishes that are easy to prepare.
 
 ## Starting the app
-To start the app, download it from the official Play Market: https://play.google.com/store/apps/details?id=com.alexlabs.bonumcibum
+The app is available in Play Market: https://play.google.com/store/apps/details?id=com.alexlabs.bonumcibum. To start the project open it in Android Studio or Eclipse
