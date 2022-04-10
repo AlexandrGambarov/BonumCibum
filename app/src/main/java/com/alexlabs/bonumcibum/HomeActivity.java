@@ -27,8 +27,8 @@ public class HomeActivity extends AppCompatActivity {
 
     // Recipes
 
-    String[] mTitle = {"Lasagna", "Tom yum"};
-    String[] mDescription = {" ", " "};
+    String[] mTitle = {"Лазанья", "Том Ям", "Вок-Якисоба", "Пирожные с какао"};
+    String[] mDescription = {" ", " ", " ", " "};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,12 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 if (position == 1) {
                     startActivity(new Intent(HomeActivity.this, TomYum.class));
+                }
+                if (position == 2) {
+                    startActivity(new Intent(HomeActivity.this, Soba.class));
+                }
+                if (position == 3) {
+                    startActivity(new Intent(HomeActivity.this, Cocoa.class));
                 }
             }
         });
