@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BonumCibum">
-        <activity android:name=".TomYum"></activity>
+        <activity android:name=".Shaurma"></activity>
+        <activity android:name=".Cocoa" />
+        <activity android:name=".Soba" />
+        <activity android:name=".TomYum" />
         <activity android:name=".Lasagna" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
