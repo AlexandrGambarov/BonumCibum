@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
 
     // Recipes
 
-    String[] mTitle = {"Лазанья", "Том Ям", "Вок-Якисоба", "Пирожные с какао", "Шаурма"};
+    String[] mTitle = {"Лазанья", "Том Ям", "Вок-Якисоба", "Пирожные с какао", "Шаверма"};
     String[] mDescription = {" ", " ", " ", " ", " "};
 
     @Override

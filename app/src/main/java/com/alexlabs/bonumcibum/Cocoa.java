@@ -35,6 +35,6 @@ public class Cocoa extends AppCompatActivity {
         /**
          * Загрузка файла на экран
          */
-        pdf_Cocoa.fromAsset("cocoa_cakes.pdf").load();
+        pdf_Cocoa.fromAsset("cocoa.pdf").load();
     }
 }

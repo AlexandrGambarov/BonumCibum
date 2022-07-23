@@ -35,6 +35,6 @@ public class Soba extends AppCompatActivity {
         /**
          * Загрузка файла на экран
          */
-        pdf_Soba.fromAsset("wok_yakisoba.pdf").load();
+        pdf_Soba.fromAsset("Wok-Yakisoba.pdf").load();
     }
 }

@@ -34,6 +34,6 @@ public class TomYum extends AppCompatActivity {
         /**
          * Загрузка файла на экран
          */
-        pdf_TomYum.fromAsset("tom_yam.pdf").load();
+        pdf_TomYum.fromAsset("Tom_Yam.pdf").load();
     }
 }
